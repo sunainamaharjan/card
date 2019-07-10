@@ -1,286 +1,185 @@
 <!DOCTYPE html>
 <html>
     <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Create Card</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <style type="text/css">
-
-        .text
-        {
-            font-size: 10px; 
-            color:#C5CCCE; 
-            font-weight: bold
-            
-        }
-
-        .main-body
-        {
-            width: 80%;
-            display: flex;
-            margin: 0px auto;
-            /* top: 50%; */
-            overflow: hidden;
-            height: 80%;
-            margin-top: 40px;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            justify-items: center;
-        }
-
-        .form-div
-        {
-            justify-content: space-between;
-            width: 50%; 
-            padding: 20px 80px;
-        }
-
-        .main-form
-        {
-            width: 500px;
-            font-size: 0.75em;
-           
-            
-        }
-
-        
-        
-        .first-form
-        {
-            display: flex;
-            justify-content: space-between;
-            margin: 20px 0px 10px 0px;
-            position: relative;
-        }
-
-        .second-form
-        {
-            display: flex;
-            justify-content: space-between;
-            margin: 20px 0px 10px 0px;
-        }
-
-        
-
-        .button-div
-        {
-            display: flex;
-            justify-content: space-between;
-            width: 410px; 
-        }
-
-        .main-card
-        {
-            background-color:#E7E9EC; 
-            width: 50%
-            
-            
-        }
-        .card-preview
-        {
-            height: 340px;
-            background-color:white; 
-            width:420px;
-            margin: 0 auto;
-            margin-top: 100px;
-            
-        }
-
-        .top-bar
-        {
-            /* border: 2px solid black; */
-            background-color:#394F63; 
-            width: 420px; 
-            height: 80px;
-            
-        }
-
-        .card-form .ro .form-group
-        {
-            border-bottom: 1px solid #C5CCCE;
-            
-        }
-        
-        .top-bar img
-        {
-            width: 90px;
-            height: 90px;
-            margin-top: 20px;
-            margin-left: 40%;
-        }
-        input{
-            outline: 0px ;
-        }
-
-        </style>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
 
-            <!-- content-div -->
-            <div class="main-body"  >
+ <!-- content-div -->
+ <div class="main-body"  >
 
-            <!-- form-div -->
-            <div class="form-div" >
-                    <div class="heading">
-                        <h3 style="font-weight:bolder; color: #394F63 ">hCard Builder</h3>
-                     </div>
-                     
-                    
+ <!-- form-div -->
+ <div class="form-div" >
+         <div class="heading">
+  <h3 style="font-weight:bolder; color: #394F63 ">hCard Builder</h3>
+          </div>
+          
+         
 
-                    <!-- main-form -->
-                    <div class="main-form">
-                    <div class="first-main-form">
-                    <div class="second-heading" style="border-bottom: 1px solid #C5CCCE; width: 410px;">
-                         <span class="text text-uppercase">personal details</span>
-                    </div>
-                    
-                    <div class="first-form">
-                            <div class="row">
-                    <div class="form-group col-lg-5">
-                        <!-- <label for="inputname">GIVEN NAME</label> -->
-                        GIVEN NAME
-                        <input type="text" class="form-control" id="inputname">
-                    </div>
-                    <div class="form-group col-lg-5">
-                            <!-- <label for="inputsurname">SURNAME</label> -->
-                            SURNAME
-                            <input type="text" class="form-control" id="inputsurname">
-                        
-                    </div>
-                    <div class="form-group col-lg-5">
-                            <!-- <label for="inputemail">EMAIL</label> -->
-                            EMAIL
-                            <input type="text" class="form-control" id="inputemail">
-                            
-                    </div>
-                    <div class="form-group col-lg-5">
-                            <!-- <label for="inputphone">PHONE</label> -->
-                            PHONE
-                            <input type="number" class="form-control" id="inputphone">
-                        </div>
-                        </div>
-                    </div>
-                    <!-- first-form -->
-                
-                    </div>
-                        <div class="second-main-form">
-                                <div class="third-heading" style="border-bottom: 1px solid #C5CCCE; width: 410px;">
-                                    <span class="text text-uppercase">address</span>
-                                </div>
-                        
-                        <div class="second-form">
-                            <div class="row">
-                            <div class="form-group col-lg-5">
-                                <!-- <label for="inputhousename">HOUSE NAME OR #</label> -->
-                                HOUSE NAME OR #
-                                <input type="text" class="form-control" id="inputhousename">
-                            </div>
-                            <div class="form-group col-lg-5">
-                                    <!-- <label for="inputstreet">STREET</label> -->
-                                    STREET
-                                    <input type="number" class="form-control" id="inputstreet">
-                            </div>
-                            <div class="form-group col-lg-5">
-                                    <!-- <label for="inputsuburb">SUBURB</label> -->
-                                    SUBURB
-                                    <input type="text" class="form-control" id="inputsuburb">
-                                   
-                            </div>
-                            <div class="form-group col-lg-5">
-                                    <!-- <label for="inputstate">STATE</label> -->
-                                    STATE
-                                    <input type="number" class="form-control" id="inputstate">
-                            </div>
-                            <div class="form-group col-lg-5">
-                                    <!-- <label for="inputpostcode">POSTCODE</label> -->
-                                    POSTCODE
-                                    <input type="text" class="form-control" id="inputpostcode">
-                                    
-                            </div>
-                            <div class="form-group col-lg-5">
-                                    <!-- <label for="inputcountry">COUNTRY</label> -->
-                                    COUNTRY
-                                    <input type="number" class="form-control" id="inputcountry">
-                                    
-                            </div>
-                        </div>
-                        </div>
-                        <!-- second-form -->
-                    </div>
-                            
-                        
-                        
-                        <div class="button-div">
-                            <div class="first-div">
-                                <button type="button" class="btn btn-secondary" style="width:190px; font-size: 20px;">Upload Avatar</button>
-                        
-                            </div>
+         <!-- main-form -->
+         <div class="main-form">
+         <div class="first-main-form">
+         <div class="second-heading" style="border-bottom: 1px solid #C5CCCE; width: 410px;">
+   <span class="text text-uppercase">personal details</span>
+         </div>
+         
+         <div class="first-form">
+      <div class="row">
+         <div class="form-group col-lg-5">
+  <!-- <label for="inputname">GIVEN NAME</label> -->
+  GIVEN NAME
+  <input type="text" class="form-control" id="inputname">
+         </div>
+         <div class="form-group col-lg-5">
+      <!-- <label for="inputsurname">SURNAME</label> -->
+      SURNAME
+      <input type="text" class="form-control" id="inputsurname">
+  
+         </div>
+         <div class="form-group col-lg-5">
+      <!-- <label for="inputemail">EMAIL</label> -->
+      EMAIL
+      <input type="text" class="form-control" id="inputemail">
+      
+         </div>
+         <div class="form-group col-lg-5">
+      <!-- <label for="inputphone">PHONE</label> -->
+      PHONE
+      <input type="number" class="form-control" id="inputphone">
+  </div>
+  </div>
+         </div>
+         <!-- first-form -->
+     
+         </div>
+  <div class="second-main-form">
+          <div class="third-heading" style="border-bottom: 1px solid #C5CCCE; width: 410px;">
+   <span class="text text-uppercase">address</span>
+          </div>
+  
+  <div class="second-form">
+      <div class="row">
+      <div class="form-group col-lg-5">
+          <!-- <label for="inputhousename">HOUSE NAME OR #</label> -->
+          HOUSE NAME OR #
+          <input type="text" class="form-control" id="inputhousename">
+      </div>
+      <div class="form-group col-lg-5">
+   <!-- <label for="inputstreet">STREET</label> -->
+   STREET
+   <input type="number" class="form-control" id="inputstreet">
+      </div>
+      <div class="form-group col-lg-5">
+   <!-- <label for="inputsuburb">SUBURB</label> -->
+   SUBURB
+   <input type="text" class="form-control" id="inputsuburb">
+  
+      </div>
+      <div class="form-group col-lg-5">
+   <!-- <label for="inputstate">STATE</label> -->
+   STATE
+   <input type="number" class="form-control" id="inputstate">
+      </div>
+      <div class="form-group col-lg-5">
+   <!-- <label for="inputpostcode">POSTCODE</label> -->
+   POSTCODE
+   <input type="text" class="form-control" id="inputpostcode">
+   
+      </div>
+      <div class="form-group col-lg-5">
+   <!-- <label for="inputcountry">COUNTRY</label> -->
+   COUNTRY
+   <input type="number" class="form-control" id="inputcountry">
+   
+      </div>
+  </div>
+  </div>
+  <!-- second-form -->
+         </div>
+      
+  
+  
+  <div class="button-div">
+      <div class="first-div">
+          <button type="button" class="btn btn-secondary" style="width:190px; font-size: 20px;">Upload Avatar</button>
+  
+      </div>
 
-                            <div class="second-div">
-                                    <button type="button" class="btn btn-primary" style="width: 190px; font-size: 20px;">Create hCard</button>
-                            
-                            </div>
+      <div class="second-div">
+   <button type="button" class="btn btn-primary" style="width: 190px; font-size: 20px;">Create hCard</button>
+      
+      </div>
 
-                            
-                        </div>
-                    
-                    
+      
+  </div>
+         
+         
 
-                </div>
-                <!-- main-form -->
+     </div>
+     <!-- main-form -->
 
-            </div>
-            <!-- form-div -->
+ </div>
+ <!-- form-div -->
 
-            <div class="main-card" >
-                
-                <div class="card-preview">
-                    <div class="card-div" style="background-color: #E7E9EC; height:30px;">
-                        <h5 class="text-uppercase" style="text-align: right; font-size: 1.2em; color: #A9B7B8">hcard preview</h5>
-                    </div>
-                    <div class="id_card">
-                        <div class="card-top">
-                            <div class="top-bar">
-                                <img src="image/men.png">
-                            </div>
-                        </div>
-                        <div class="card-form" style="margin-top: 15px;">
-                            <div class="ro" style="display: flex;flex-direction:column; padding: 30px 30px 0px 30px; width: 100%; font-size: 0.7em;">
-                            <div class="form-group">
-                                <span>EMAIL</span>
-                                <span></span>
-                            </div>
-                            <div class="form-group">
-                                    <span>PHONE</span>
-                                    <span></span>
-                            </div>
-                            <div class="form-group">
-                                    <span>ADDRESS</span>
-                                    <span></span>
-                            </div>
-                            <div class="form-group" style="height: 15px">
-                                
-                                <span></span>
-                        </div>
-                            <div class="form-group" style="display: flex; justify-content: space-between; flex-wrap: wrap;padding-right:10em ">
-                                    <div>
-                                            <span>POSTCODE</span>
-                                            <span></span>
-                                    </div>
-                                    <div>
-                                            <span>COUNTRY</span>
-                                            <span></span>
-                                    </div>
-                                    
+ <div class="main-card" >
+     
+     <div class="card-preview">
+         <div class="card-div" style="background-color: #E7E9EC; height:30px;">
+  <h5 class="text-uppercase" style="text-align: right; font-size: 1.2em; color: #A9B7B8">hcard preview</h5>
+         </div>
+         <div class="id_card">
+  <div class="card-top" style="">
+      <div class="top-bar">
+  
+          <div class="image">
+       <!-- <div class="name-text"style="width: 70%; border: 2px solid yellow" >
+
+    <p></p>
+       </div>   -->
+          <img src="image/person.png">
+      </div>  
+      </div>
+  </div>
+  <div class="card-form" style="margin-top: 15px;">
+      <div class="ro" style="display: flex;flex-direction:column; padding: 30px 30px 0px 30px; width: 100%; font-size: 0.7em;">
+      <div class="form-group">
+          <span>EMAIL</span>
+          <span></span>
+      </div>
+      <div class="form-group">
+   <span>PHONE</span>
+   <span></span>
+      </div>
+      <div class="form-group">
+   <span>ADDRESS</span>
+   <span></span>
+      </div>
+      <div class="form-group" style="height: 15px">
+          
+          <span></span>
+  </div>
+      <div class="form-group" style="display: flex; justify-content: space-between; flex-wrap: wrap;padding-right:10em ">
+   <div>
+<span>POSTCODE</span>
+<span></span>
+   </div>
+   <div>
+<span>COUNTRY</span>
+<span></span>
+   </div>
+   
     
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div> 
-            </div>
+      </div>
+  </div>
+         </div>
+         </div>
+     </div> 
+ </div>
         </div>
         <!-- content-div -->
  
